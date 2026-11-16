@@ -4,7 +4,7 @@
 #define _HEIGHT_ 160
 #define _VEHICLES_ false
 #define _PEDS_ false
-#define _TRAFFIC_SIGNS_ false
+#define _TRAFFIC_SIGNS_ true
 #define _DIRECTION_ false
 #define _REWARD_ false
 #define _THROTTLE_ false
