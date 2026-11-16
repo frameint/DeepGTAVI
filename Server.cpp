@@ -9,6 +9,7 @@ using namespace rapidjson;
 Server::Server(unsigned int port) {
 	struct sockaddr_in server;
 	freopen("deepgtav.log", "w", stdout);
+	freopen("deepgtav.log", "w", stdout);
 
 	printf("\nInitializing Winsock...");
 	if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
