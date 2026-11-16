@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Rewarder.h"
+#include "Rewarders.h"
 #include <unordered_map>
 
 typedef struct {
