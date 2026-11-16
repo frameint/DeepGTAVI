@@ -1,7 +1,5 @@
 /*
-	THIS FILE IS A PART OF GTA V SCRIPT HOOK SDK
-				http://dev-c.com			
-			(C) Alexander Blade 2015
+	THIS FILE IS A PART OF GTA VI SCRIPT HOOK SDK
 */
 
 #include "lib/script.h"
@@ -13,7 +11,7 @@ void ScriptMain()
 	while (true) {
 		while (!server.clientConnected) {
 			server.checkClient();
-			scriptWait(0);
+			scriptWait(1);
 		}
 		while (server.clientConnected) {
 			server.checkRecvMessage();
