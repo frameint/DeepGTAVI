@@ -10,7 +10,7 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\inc\natives.h">
-      <Filter>include</Filter>
+      <Filter>include</Filters>
     </ClInclude>
     <ClInclude Include="..\..\inc\types.h">
       <Filter>include</Filter>
