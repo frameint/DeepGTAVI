@@ -1,6 +1,6 @@
 #pragma once
 
-#define WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN_AND_WINS
 #include <Windows.h>
 
 class ScreenCapturer {
