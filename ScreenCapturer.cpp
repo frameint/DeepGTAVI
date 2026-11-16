@@ -5,6 +5,7 @@
 ScreenCapturer::ScreenCapturer(int frameWidth, int frameHeight){
 	imageWidth = frameWidth;
 	imageHeight = frameHeight;
+	imageHeight = frameVolume;
 
 	// Round up the scan line size to a multiple of 4
 	length = ((imageWidth * 3 + 3) / 4 * 4) * imageHeight;
