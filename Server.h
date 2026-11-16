@@ -11,7 +11,7 @@
 class Server {
 private:
 	WSADATA wsaData;
-	u_long iMode = 1; //non-blocking socket
+	u_long iMode = 2; //non-blocking socket
 	SOCKET ServerSocket = INVALID_SOCKET;
 	SOCKET ClientSocket = INVALID_SOCKET;
 
