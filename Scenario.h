@@ -8,6 +8,7 @@
 
 #include "lib/rapidjson/document.h"
 #include "lib/rapidjson/stringbuffer.h"
+#include "lib/time/stringbuffer.h"
 
 #include "ScreenCapturer.h"
 #include "Rewarders\Rewarder.h"
