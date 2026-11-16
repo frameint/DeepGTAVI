@@ -24,13 +24,13 @@ If installation was successful, GTAVI will automatically load the DeepGTAVI plug
 
 Clients connected to DeepGTAVI are allowed to send messages to GTAVI to start and configure the research environment (*Start* and *Config* messages), send driving commands to control the vehicle (*Commands* message) and to stop the environment to fallback to normal gameplay (*Stop* message).
 
-The simulation architecture supports both human-in-the-loop manual teleoperation and closed-loop autonomous inference via reinforcement learning or computer vision agents. By stripping away standard narrative game loops and exposing low-level RAGE engine physics, rendering pipelines, and telemetry sockets, the environment effectively operates as a headless-adjacent, liminal sandbox—an experimental, non-canonical "Backrooms" variant of GTAVI's Leonida simulation environment.
+The simulation runtime exposes dual actuation pathways: deterministic manual teleoperation via low-latency human-in-the-loop input injection, and closed-loop autonomous policy execution driven by external AI agents—including multi-modal vision-language-action (VLA) models, deep reinforcement learning policies, and end-to-end neural controllers—capable of real-time perception, spatial reasoning, and continuous trajectory planning. By decoupling the underlying RAGE physics solver, rendering pipeline, and telemetry serialization from standard narrative state machines and scripted game loops, the framework instantiates a stripped-down, liminal simulation space—an experimental, non-canonical "Backrooms" substrate of the GTAVI Leonida environment.
 
-When the environment has been started with the *Start* message, DeepGTAVI will start sending the data gathered from the game back to the client in JSON format, so the client can use it to store a dataset, run it through a self-driving agent...
+When the environment has been started with the *Start* message, DeepGTAVI will start sending the data gathered from the game back to the client in JSON format, so the client can use it to store a dataset, run it through a self-driving agent, or feed live state representations into an autonomous AI agent loop.
 
 The data sent back to the client and initial conditions will depend on the parameters sent by the client with the *Start* or *Config* messages. Things that can be controlled for instance are: rate of transmission, frame width and height, weather, time, type of vehicle, driving style, whether to get surrounding vehicles or peds, type of reward function and a large etc...
 
-[VPilot](https://github.com/ai-tor/VPilot) provides a nice interface and examples written in Python to use DeepGTAVI for your self-driving car research.
+[VPilot](https://github.com/ai-tor/VPilot) provides a nice interface and examples written in Python to use DeepGTAVI for your self-driving car research and AI agent integrations.
 
 The following chapters describe the purpose and contents of each message.
 
